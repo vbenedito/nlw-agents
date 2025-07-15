@@ -1,7 +1,14 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CreateRoom } from "./pages/create-rooms";
+import { Room } from "./pages/room";
+
 export function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<CreateRoom />} index />
+        <Route element={<Room />} path="/room" />
+      </Routes>
+    </BrowserRouter>
   );
 }
