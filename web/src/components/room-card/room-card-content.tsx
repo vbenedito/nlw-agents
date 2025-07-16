@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { dayjs } from "@/lib/format-relative-date";
 import { CardContent } from "../ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { GetRoomsAPIResponse } from "@/pages/create-room";
+import type { GetRoomsAPIResponse } from "@/types";
 
 export function RoomCardContent({ data }: { data: GetRoomsAPIResponse }) {
   return (
